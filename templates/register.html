@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="static/img/MAGNÉTICA.ico">
+    <title>Contacto</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="../static/img/MAGNÉTICA.ico">
     <script src="https://kit.fontawesome.com/a8656677c2.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">    
-    <link rel="stylesheet" href="/static/register.css">
+    <link rel="stylesheet" href="../static/register.css">
     
 </head>
 <body>
@@ -45,7 +45,7 @@
             <form action="#" id="formRegister" method="GET">
                 
                 <div class="form-control">
-                    <label for="">Seleccioná el tema</label>
+                    <label for="list-theme">Seleccioná el tema</label>
                     <select name="list-theme" id="list-theme" required>
                         <option value="">Seleccione</option>
                         <option value="">Calidad del producto</option>
@@ -56,31 +56,31 @@
                 <div class="error" id="error-list-theme"></div>
                 
                 <div class="form-control">
-                    <label for="">Nombre</label>
+                    <label for="firstname">Nombre</label>
                     <input type="text" name="firstname" id="firstname" required>
                 </div>
                 <div class="error" id="error-firstname"></div>
                 
-                <div  class="form-control">
-                    <label for="">Apellido</label>
+                <div class="form-control">
+                    <label for="lastname">Apellido</label>
                     <input type="text" name="lastname" id="lastname" required>
                 </div>
                 <div class="error" id="error-lastname"></div>
                 
                 <div class="form-control">
-                    <label for="">Email</label>
+                    <label for="email">Email</label>
                     <input type="email" name="email" id="email" placeholder="Por favor ingrese un email" required>
                 </div>
                 <div class="error" id="error-email"></div>
                 
                 <div class="form-control">
-                    <label for="">Teléfono</label>
+                    <label for="telephone">Teléfono</label>
                     <input type="tel" name="telephone" id="telephone" placeholder="Por favor ingrese un teléfono" required>
                 </div>
                 <div class="error" id="error-telephone"></div>
                                     
                 <div class="form-control">                    
-                    <label for="">Mensaje</label>
+                    <label for="comment">Mensaje</label>
                     <textarea name="comment" id="comment" rows="4" cols="50" required></textarea>                                       
                 </div>
                 <div class="error" id="error-comment"></div>
@@ -95,7 +95,7 @@
             </form>
         </section>
     </main>
-    <script src="../static/js/validation-register.js"></script>
+    <script src="/static/js/validation-register.js"></script>
 
     <footer class="footer">
 
@@ -125,7 +125,7 @@
                 <ul>
                     <li><a href="#">Preguntas frecuentes</a></li>
                     <li><a href="#">Medios de pago</a></li>
-                    <li><a href="/templates/register.html">Contacto</a></li>
+                    <li><a href="templates/register.html">Contacto</a></li>
                 </ul>
             </div>
 
