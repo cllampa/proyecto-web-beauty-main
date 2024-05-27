@@ -70,12 +70,13 @@ nav{
     grid-template-columns: repeat(3, 1fr);
     max-width: 1200px;
     margin: 0 auto;
+    margin-left: 42px;
 
 }
 
-
-
 /*PRODUCTOS*/
+
+
 
 .products-list {
     display: grid;
@@ -194,9 +195,9 @@ body {
     .login-text{
         display: none;
     }
-    .logo-text{
+    /*.logo-text{
         display: none;
-    }
+    }*/
     #banner{
         height: 400px;
     }
