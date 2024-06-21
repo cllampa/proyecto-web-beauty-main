@@ -134,3 +134,153 @@ margin-bottom: 35px;
         font-size: 16px;
     }
 }
+
+
+
+/*FOOTER*/
+
+body {
+    font-family: "Josefin Sans";
+    text-transform: capitalize;
+}
+
+.box {
+    padding: 0 20px;
+    /* Añadido para separación entre columnas */
+}
+
+.footer {
+    background-color: #EAE7FA;
+    padding: 20px 0;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+.footer-links {
+    width: 100%;
+    display: grid;
+    /* Cambiamos a grid */
+    grid-template-columns: repeat(4, 1fr);
+    /* Dividimos en 4 columnas */
+    gap: 15px;
+    /* Agregamos un espacio entre las columnas */
+    box-sizing: border-box;
+}
+
+
+.footer-links h4 {
+    font-size: 20px;
+    color: #695E93;
+    margin-bottom: 25px;
+    font-weight: 500;
+    border-bottom: 2px solid #5D59AF; /*linea debajo del h4 */
+    padding-bottom: 10px;
+    display: inline-block;
+    
+}
+
+
+.footer-links ul li a {
+    font-size: 18px;
+    text-decoration:none;
+    color: #170B3B;
+    display: block;
+    margin-bottom: 15px;
+    transition: all .3s ease;
+}
+
+.footer-links ul li a:hover {
+    color: #4120A9;
+    padding-left: 6px;
+
+}
+
+.social-link a {
+    display: inline-block;
+    min-height: 40px;
+    width: 40px;
+    background-color: #9E97E3;
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #170B3B;
+    transition: all 300ms ease;
+    text-decoration: none;
+    /*es para que se borre la linea debajo de los iconos de las redes*/
+}
+
+.social-link a:hover {
+    background-color: #D7A1F9;
+}
+
+@media(max-width:991px) {
+    .footer-row {
+        text-align: center;
+    }
+
+    .footer-links {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        /* Cambio en el diseño en pantallas más pequeñas */
+    }
+}
+
+
+.header{
+    background-color: white;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+a{
+    text-decoration: none;
+}
+
+.logo-text{
+    background-color:transparent;
+    color: black;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 155%;
+    letter-spacing: 2px;
+    /*font-weight: bold;*/    
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 0px 40px;
+}
+
+.nav-links{
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    text-decoration: none;
+    color: white;
+    align-items: center;
+
+} 
+
+.nav-links a{
+    color: black;
+    font-family: 'Josefin Sans', sans-serif; 
+    font-size: 100%;
+    align-items: center;
+   
+
+    /*font-weight: bold;*/
+}
+
+.nav-links a{
+    display: flex;
+    justify-content: center; /* Centra horizontalmente los elementos hijos */
+    
+}
