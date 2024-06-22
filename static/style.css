@@ -183,106 +183,72 @@ body {
 /*FIN FOOTER*/
 
 
-/* PANTALLAS GRANDES */
-@media screen and (max-width:1920px) {
-    
-}
-
-
-/* TABLETS */
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-    h2{
-        font-size: 3vw;
-    }
-    .login-text{
-        display: none;
-    }
-    /*.logo-text{
-        display: none;
-    }*/
-    #banner{
-        height: 400px;
-    }
-    #search{
-        height: 200px;
-    }
-    .container{
-        max-width: 720px;
-    }
-    .card-banner{
-        padding: 0px 75px;
-    }
-    .movies-grid{
-        grid-template-columns: repeat(2,1fr);
-        grid-template-rows: repeat(4,1fr);
-    }
-    .d-form{
-        width: 100%;
-        margin-bottom: 20px;
-    }
-    
-    .d-iframe{
-        width: 100%;
+/* CELULARES y TABLET */
+@media (max-width: 991px) {
+    .footer-row {
+        text-align: center;
     }
 
-    .footer {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+    .footer-links {
+        grid-template-columns: repeat(2, 1fr);
+        /* Cambio en el diseño en pantallas más pequeñas */
+    }
 
+    .nav-links {
+        gap: 20px;
+    }
+
+    nav {
+        padding: 0 20px;
     }
 }
 
-/* CELULARES */
-@media screen and (max-width: 767px) {
-    h2{
-        font-size: 3vw;
+@media (max-width: 767px) {
+    .nav-links {
+        display: none; /* Oculta las opciones de navegación en móviles */
     }
 
-    .h2-subtitle{
-        font-size: 5vw;
-    }
-    .login-text{
-        display: none;
-    }
-    .logo-text{
-        display: none;
-    }
-    #banner{
-        height: 300px;
-    }
-    #search{
-        height: 200px;
-    }
-    .container{
-        max-width: 420px;
-    }
-    .card-banner{
-        padding: 0px 50px;
-    }
-    .movies-grid{
-        grid-template-columns: repeat(1,1fr);
+    .logo-text {
+        font-size: 130%;
     }
 
-    .d-form{
-        width: 100%;
-        margin-bottom: 20px;
-    }
-    
-    .d-iframe{
-        width: 100%;
+    .container,
+    .products-list {
+        grid-template-columns: 1fr;
     }
 
-    .btn-cac{
-        font-size: 1vh;
+    .footer-links {
+        grid-template-columns: 1fr;
     }
-    .footer {
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 10px;
+    }
+
+    .logo-text {
+        font-size: 120%;
+    }
+
+    nav {
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
     }
 
-    .footer a{
-        padding: 2px 0px;
+    .nav-links {
+        display: block;
+        text-align: center;
+    }
+
+    .footer {
+        padding: 10px 0;
+    }
+
+    .footer-links h4 {
+        font-size: 18px;
+    }
+
+    .footer-links ul li a {
+        font-size: 16px;
     }
 }
