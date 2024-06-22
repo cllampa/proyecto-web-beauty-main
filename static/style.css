@@ -99,7 +99,8 @@ nav{
 
 body {
     font-family: "Josefin Sans";
-    text-transform: capitalize;
+    text-transform: none;
+
 }
 
 .box {
@@ -179,6 +180,7 @@ body {
         /* Cambio en el diseño en pantallas más pequeñas */
     }
 }
+/*FIN FOOTER*/
 
 
 /* PANTALLAS GRANDES */
@@ -223,7 +225,7 @@ body {
         width: 100%;
     }
 
-    #footer {
+    .footer {
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -274,13 +276,13 @@ body {
     .btn-cac{
         font-size: 1vh;
     }
-    #footer {
+    .footer {
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
 
-    #footer a{
+    .footer a{
         padding: 2px 0px;
     }
 }
