@@ -7,6 +7,7 @@
     padding: 0px;
     box-sizing: border-box;
     font-family:"Josefin Sans";
+    list-style: none;
 }
 
 body{
@@ -28,9 +29,13 @@ body{
     color: #5D59AF;
     margin-bottom: 25px;
     position: relative;
+    text-transform: none;
+    
+
+    
 }
 
-.heading h1::after{
+/*.heading h1::after{
     content: "";
     position: absolute;
     width: 100%;
@@ -38,13 +43,14 @@ body{
     display: block;
     margin: 0 auto;
     background-color: #4120A9;
-
-}
+}*/
 
 .heading p{
 font-size: 18px;
 color: #170b3b;
 margin-bottom: 35px;
+text-transform: none;
+
 }
 
 .container{
@@ -110,6 +116,8 @@ margin-bottom: 35px;
     }
     .heading h1{
         font-size: 36px;
+        text-decoration: none;
+
     }
     .heading p{
         font-size: 17px;
@@ -141,7 +149,8 @@ margin-bottom: 35px;
 
 body {
     font-family: "Josefin Sans";
-    text-transform: capitalize;
+    text-transform: none;
+
 }
 
 .box {
@@ -228,6 +237,7 @@ a{
     }
 }
 
+/*CIERRE FOOTER*/
 
 .header{
     background-color: white;
