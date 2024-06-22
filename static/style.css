@@ -140,7 +140,7 @@ body {
     background-color: #D7A1F9;
 }
 
-/* Media Queries para responsive design */
+/* CELULARES Y TABLET */
 @media (max-width: 991px) {
     .footer-row {
         text-align: center;
